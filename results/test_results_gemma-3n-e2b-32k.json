@@ -1,0 +1,31 @@
+{
+  "model": "gemma-3n-e2b-32k",
+  "results": [
+    {
+      "id": "html_profiles",
+      "category": "html",
+      "model": "gemma-3n-e2b-32k",
+      "prompt_tokens": 88,
+      "completion_tokens": 694,
+      "elapsed": 34.1,
+      "tok_s": 20.3,
+      "max_tokens": 4096,
+      "finish_reason": "stop",
+      "output_chars": 2319,
+      "error": null
+    },
+    {
+      "id": "html_game",
+      "category": "html",
+      "model": "gemma-3n-e2b-32k",
+      "prompt_tokens": 89,
+      "completion_tokens": 836,
+      "elapsed": 40.0,
+      "tok_s": 20.9,
+      "max_tokens": 4096,
+      "finish_reason": "stop",
+      "output_chars": 2547,
+      "error": null
+    }
+  ]
+}

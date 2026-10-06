@@ -1,0 +1,268 @@
+{
+  "models": [
+    {
+      "name": "Llama-3.2-1B",
+      "arch": "llama",
+      "file_MB": 810,
+      "n_layers": 16,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "Qwen3-1.7B",
+      "arch": "qwen3",
+      "file_MB": 1280,
+      "n_layers": 28,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "Qwen3.5-2B",
+      "arch": "qwen35",
+      "file_MB": 1400,
+      "n_layers": 28,
+      "n_kv_heads": 4,
+      "head_dim": 256,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "xLAM-2-1B Q8",
+      "arch": "llama",
+      "file_MB": 1650,
+      "n_layers": 16,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama arch (same as Llama-3.2-1B)"
+    },
+    {
+      "name": "Granite-3.2-2B",
+      "arch": "granite",
+      "file_MB": 1550,
+      "n_layers": 40,
+      "n_kv_heads": 8,
+      "head_dim": 64,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "MiniCPM5-2B",
+      "arch": "llama",
+      "file_MB": 1560,
+      "n_layers": 42,
+      "n_kv_heads": 2,
+      "head_dim": 128,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "Granite-3.0-2B",
+      "arch": "granite",
+      "file_MB": 1600,
+      "n_layers": 40,
+      "n_kv_heads": 8,
+      "head_dim": 64,
+      "source": "same as Granite-3.2"
+    },
+    {
+      "name": "Gemma-4-E2B",
+      "arch": "gemma4",
+      "file_MB": 2840,
+      "n_layers": 35,
+      "n_kv_heads": 1,
+      "head_dim": 512,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "Ministral-3B-Inst",
+      "arch": "llama",
+      "file_MB": 2350,
+      "n_layers": 28,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "Gemma-3n-E2B",
+      "arch": "gemma3n",
+      "file_MB": 3030,
+      "n_layers": 30,
+      "n_kv_heads": 2,
+      "head_dim": 256,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "SmolLM3-3B",
+      "arch": "smollm3",
+      "file_MB": 1920,
+      "n_layers": 36,
+      "n_kv_heads": 4,
+      "head_dim": 128,
+      "source": "llama-server -lv 4 (emb=2048, head_count=16, 2048/16=128)"
+    },
+    {
+      "name": "Qwen2.5-3B",
+      "arch": "qwen2",
+      "file_MB": 1930,
+      "n_layers": 36,
+      "n_kv_heads": 2,
+      "head_dim": 128,
+      "source": "llama-server -lv 4 (emb=2048, head_count=16)"
+    },
+    {
+      "name": "Llama-3.2-3B",
+      "arch": "llama",
+      "file_MB": 2020,
+      "n_layers": 28,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "Qwen2.5-Coder-3B",
+      "arch": "qwen2",
+      "file_MB": 1930,
+      "n_layers": 36,
+      "n_kv_heads": 2,
+      "head_dim": 128,
+      "source": "same as Qwen2.5-3B"
+    },
+    {
+      "name": "Hermes-3-3B Q5",
+      "arch": "llama",
+      "file_MB": 2320,
+      "n_layers": 28,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama-server -lv 4 (NOT 32 layers!)"
+    },
+    {
+      "name": "Granite-4.2-3B",
+      "arch": "granite",
+      "file_MB": 2240,
+      "n_layers": 40,
+      "n_kv_heads": 8,
+      "head_dim": 64,
+      "source": "llama-server -lv 4 (emb=2560, head_count=40, 2560/40=64)"
+    },
+    {
+      "name": "Ministral-3B-RS",
+      "arch": "mistral3",
+      "file_MB": 2150,
+      "n_layers": 28,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "TinyAya-Global",
+      "arch": "cohere2",
+      "file_MB": 2140,
+      "n_layers": 24,
+      "n_kv_heads": 4,
+      "head_dim": 128,
+      "source": "approx (cohere2 arch)"
+    },
+    {
+      "name": "Phi-4-mini",
+      "arch": "phi3",
+      "file_MB": 2490,
+      "n_layers": 32,
+      "n_kv_heads": 8,
+      "head_dim": 96,
+      "source": "llama-server -lv 4 (NOT 32 kv_heads!)"
+    },
+    {
+      "name": "Phi-3-3.8B",
+      "arch": "phi3",
+      "file_MB": 2180,
+      "n_layers": 32,
+      "n_kv_heads": 32,
+      "head_dim": 96,
+      "source": "llama-server -lv 4 (no GQA, 32 kv_heads)"
+    },
+    {
+      "name": "Qwen3-4B",
+      "arch": "qwen3",
+      "file_MB": 2500,
+      "n_layers": 36,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama-server -lv 4 (NOT 4 kv_heads!)"
+    },
+    {
+      "name": "Spark-X2.5-4B",
+      "arch": "spark2_5",
+      "file_MB": 2600,
+      "n_layers": 36,
+      "n_kv_heads": 4,
+      "head_dim": 256,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "Qwen3.5-4B",
+      "arch": "qwen35",
+      "file_MB": 3010,
+      "n_layers": 33,
+      "n_kv_heads": 4,
+      "head_dim": 256,
+      "source": "llama-server -lv 4"
+    },
+    {
+      "name": "Nemotron-3N-4B",
+      "arch": "nemotron_h",
+      "file_MB": 2900,
+      "n_layers": 36,
+      "n_kv_heads": 4,
+      "head_dim": 128,
+      "source": "approx (nemotron_h hybrid Mamba-Transformer)"
+    },
+    {
+      "name": "xLAM-2-3B Q8",
+      "arch": "qwen3",
+      "file_MB": 3290,
+      "n_layers": 36,
+      "n_kv_heads": 4,
+      "head_dim": 128,
+      "source": "approx (qwen-based FC model)"
+    },
+    {
+      "name": "SmallThinker-3B Q8",
+      "arch": "qwen3",
+      "file_MB": 3620,
+      "n_layers": 36,
+      "n_kv_heads": 4,
+      "head_dim": 128,
+      "source": "approx (qwen-based)"
+    },
+    {
+      "name": "Mistral-7B",
+      "arch": "llama",
+      "file_MB": 4370,
+      "n_layers": 32,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "source": "llama-server -lv 4"
+    }
+  ],
+  "kv_formula": "KV_per_token_bytes = 2 * n_layers * n_kv_heads * head_dim",
+  "kv_bytes_per_element": {
+    "f16": 2.0,
+    "q8_0": 1.0,
+    "q4_0": 0.5
+  },
+  "system": {
+    "platform": "NVIDIA Jetson Orin Nano 8GB",
+    "llama_cpp_build": "0.6.0-dev, build 1051, commit 8345f333 (Oct 5 2026)",
+    "total_ram_MB": 7607,
+    "available_for_model_MB": 5200,
+    "realistic_budget_MB": 4500,
+    "budget_explanation": "5200 available - 600 Hermes gateway - 100 fluctuation = ~4500MB",
+    "cuda_overhead_MB": 400,
+    "launch_env": "GGML_CUDA_ENABLE_UNIFIED_MEMORY=1",
+    "launch_flags": "-ngl 99 -b 512 -ub 512 -fa on --jinja -np 1 -t 6 --temp 0.0 --top-k 1 --repeat-penalty 1.0 --fit off"
+  },
+  "failed_models": {
+    "Gemma-4-E4B-QAT": "OOM at all ctx (4.22GB weight > available budget)",
+    "Mistral-7B": "OOM at all ctx (4.37GB weight + KV > available budget)"
+  }
+}
