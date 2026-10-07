@@ -1,0 +1,1686 @@
+{
+  "model": "gemma4-e4b-ud",
+  "timestamp": "2026-10-06T17:25:07.321441",
+  "categories": {
+    "simple": {
+      "total": 30,
+      "correct": 28
+    },
+    "moderate_parallel": {
+      "total": 12,
+      "correct": 11
+    },
+    "moderate_chained": {
+      "total": 8,
+      "correct": 8
+    },
+    "coding": {
+      "total": 2,
+      "correct": 1
+    }
+  },
+  "details": [
+    {
+      "id": "simple_01",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_02",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 250,
+            "from_currency": "USD",
+            "to_currency": "EUR"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 250,
+            "from_currency": "USD",
+            "to_currency": "EUR"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_03",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "calculate_mortgage",
+          "args": {
+            "annual_rate": 4.2,
+            "principal": 320000,
+            "years": 30
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "calculate_mortgage",
+          "args": {
+            "principal": 320000,
+            "annual_rate": 4.2,
+            "years": 30
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_04",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "set_alarm",
+          "args": {
+            "label": "workout",
+            "time": "07:30"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "set_alarm",
+          "args": {
+            "time": "07:30",
+            "label": "workout"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_05",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "send_email",
+          "args": {
+            "body": "Hi Maria, please find the Q3 invoice attached.",
+            "subject": "Q3 Invoice",
+            "to": "maria@example.com"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "send_email",
+          "args": {
+            "to": "maria@example.com",
+            "subject": "Q3 Invoice",
+            "body": "Hi Maria, please find the Q3 invoice attached."
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_06",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "destination": "Portland",
+            "origin": "Seattle"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "origin": "Seattle",
+            "destination": "Portland"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_07",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "play_song",
+          "args": {
+            "artist": "Queen",
+            "title": "Bohemian Rhapsody"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "play_song",
+          "args": {
+            "title": "Bohemian Rhapsody",
+            "artist": "Queen"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_08",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "AAPL"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "AAPL"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_09",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "height_m": 1.75,
+            "weight_kg": 70
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "weight_kg": 70,
+            "height_m": 1.75
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_10",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "translate_text",
+          "args": {
+            "target_language": "Spanish",
+            "text": "Good morning"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "translate_text",
+          "args": {
+            "text": "Good morning",
+            "target_language": "Spanish"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_11",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "date": "2026-10-12",
+            "time": "14:00",
+            "title": "Dentist appointment"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "title": "Dentist appointment",
+            "date": "2026-10-12",
+            "time": "14:00"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_12",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "find_restaurant",
+          "args": {
+            "cuisine": "Thai",
+            "location": "Portland",
+            "max_price_per_person": 20
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "find_restaurant",
+          "args": {
+            "cuisine": "Thai",
+            "location": "Portland",
+            "max_price_per_person": 20
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_13",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "random_number",
+          "args": {
+            "max": 100,
+            "min": 1
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "random_number",
+          "args": {
+            "min": 1,
+            "max": 100
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_14",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "generate_password",
+          "args": {
+            "include_symbols": true,
+            "length": 16
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "generate_password",
+          "args": {
+            "length": 16,
+            "include_symbols": true
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_15",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "track_package",
+          "args": {
+            "tracking_id": "1Z999AA10123456784"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "track_package",
+          "args": {
+            "tracking_id": "1Z999AA10123456784"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_16",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "calculate_tip",
+          "args": {
+            "bill_amount": 85.4,
+            "tip_percentage": 18
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "calculate_tip",
+          "args": {
+            "bill_amount": 85.4,
+            "tip_percentage": 18
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_17",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "set_thermostat",
+          "args": {
+            "room": "living room",
+            "temperature": 22
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "set_thermostat",
+          "args": {
+            "room": "living room",
+            "temperature": 22
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_18",
+      "category": "simple",
+      "pass": false,
+      "predicted": [
+        {
+          "name": "log_workout",
+          "args": {
+            "activity": "run",
+            "calories": 430,
+            "duration_minutes": 45
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "log_workout",
+          "args": {
+            "activity": "running",
+            "duration_minutes": 45,
+            "calories": 430
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_19",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_customer",
+          "args": {
+            "customer_id": 4821
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_customer",
+          "args": {
+            "customer_id": 4821
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_20",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "milk",
+            "quantity": 2
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "milk",
+            "quantity": 2
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_21",
+      "category": "simple",
+      "pass": false,
+      "predicted": [
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Dune: Part Two",
+            "theater": "downtown theater"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Dune: Part Two",
+            "theater": "downtown"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_22",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_definition",
+          "args": {
+            "word": "ephemeral"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_definition",
+          "args": {
+            "word": "ephemeral"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_23",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "create_todo",
+          "args": {
+            "due_date": "2026-10-02",
+            "priority": "high",
+            "task": "buy a birthday cake"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "create_todo",
+          "args": {
+            "task": "buy a birthday cake",
+            "due_date": "2026-10-02",
+            "priority": "high"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_24",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_sunrise_sunset",
+          "args": {
+            "date": "2026-06-21",
+            "location": "Reykjavik"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_sunrise_sunset",
+          "args": {
+            "location": "Reykjavik",
+            "date": "2026-06-21"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_25",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "control_smart_light",
+          "args": {
+            "room": "bedroom",
+            "state": "off"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "control_smart_light",
+          "args": {
+            "room": "bedroom",
+            "state": "off"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_26",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "book_hotel",
+          "args": {
+            "check_in": "2026-11-20",
+            "city": "Barcelona",
+            "nights": 4
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "book_hotel",
+          "args": {
+            "city": "Barcelona",
+            "check_in": "2026-11-20",
+            "nights": 4
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_27",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_recipe",
+          "args": {
+            "ingredients": [
+              "chicken",
+              "rice",
+              "broccoli"
+            ]
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_recipe",
+          "args": {
+            "ingredients": [
+              "chicken",
+              "rice",
+              "broccoli"
+            ]
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_28",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "send_text",
+          "args": {
+            "message": "Running late, start without me",
+            "to": "555-0142"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "send_text",
+          "args": {
+            "to": "555-0142",
+            "message": "Running late, start without me"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_29",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "calculate_fuel_cost",
+          "args": {
+            "distance_miles": 450,
+            "mpg": 32,
+            "price_per_gallon": 3.85
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "calculate_fuel_cost",
+          "args": {
+            "distance_miles": 450,
+            "mpg": 32,
+            "price_per_gallon": 3.85
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "simple_30",
+      "category": "simple",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "query_sales",
+          "args": {
+            "quarter": "Q3",
+            "region": "west"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "query_sales",
+          "args": {
+            "region": "west",
+            "quarter": "Q3"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_01",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Paris"
+          }
+        },
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Paris"
+          }
+        },
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_02",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 100,
+            "from_currency": "USD",
+            "to_currency": "EUR"
+          }
+        },
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 100,
+            "from_currency": "USD",
+            "to_currency": "JPY"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 100,
+            "from_currency": "USD",
+            "to_currency": "EUR"
+          }
+        },
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 100,
+            "from_currency": "USD",
+            "to_currency": "JPY"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_03",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "AAPL"
+          }
+        },
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "MSFT"
+          }
+        },
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "TSLA"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "AAPL"
+          }
+        },
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "MSFT"
+          }
+        },
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "TSLA"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_04",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "date": "2026-10-09",
+            "time": "12:00",
+            "title": "Lunch with Sam"
+          }
+        },
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "date": "2026-10-09",
+            "time": "18:00",
+            "title": "Gym session"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "title": "Lunch with Sam",
+            "date": "2026-10-09",
+            "time": "12:00"
+          }
+        },
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "title": "Gym session",
+            "date": "2026-10-09",
+            "time": "18:00"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_05",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "send_text",
+          "args": {
+            "message": "Love you!",
+            "to": "555-0101"
+          }
+        },
+        {
+          "name": "send_text",
+          "args": {
+            "message": "Happy birthday!",
+            "to": "555-0303"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "send_text",
+          "args": {
+            "to": "555-0101",
+            "message": "Love you!"
+          }
+        },
+        {
+          "name": "send_text",
+          "args": {
+            "to": "555-0303",
+            "message": "Happy birthday!"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_06",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "set_thermostat",
+          "args": {
+            "room": "bedroom",
+            "temperature": 21
+          }
+        },
+        {
+          "name": "control_smart_light",
+          "args": {
+            "room": "kitchen",
+            "state": "off"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "set_thermostat",
+          "args": {
+            "room": "bedroom",
+            "temperature": 21
+          }
+        },
+        {
+          "name": "control_smart_light",
+          "args": {
+            "room": "kitchen",
+            "state": "off"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_07",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Dune: Part Two",
+            "theater": "downtown theater"
+          }
+        },
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Interstellar",
+            "theater": "mall theater"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Dune: Part Two",
+            "theater": "downtown"
+          }
+        },
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Interstellar",
+            "theater": "mall"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_08",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "milk",
+            "quantity": 1
+          }
+        },
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "eggs",
+            "quantity": 1
+          }
+        },
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "bread",
+            "quantity": 1
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "milk",
+            "quantity": 1
+          }
+        },
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "eggs",
+            "quantity": 1
+          }
+        },
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "bread",
+            "quantity": 1
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_09",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "play_song",
+          "args": {
+            "artist": "Queen",
+            "title": "Bohemian Rhapsody"
+          }
+        },
+        {
+          "name": "play_song",
+          "args": {
+            "artist": "Eagles",
+            "title": "Hotel California"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "play_song",
+          "args": {
+            "title": "Bohemian Rhapsody",
+            "artist": "Queen"
+          }
+        },
+        {
+          "name": "play_song",
+          "args": {
+            "title": "Hotel California",
+            "artist": "Eagles"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_10",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "height_m": 1.75,
+            "weight_kg": 70
+          }
+        },
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "height_m": 1.8,
+            "weight_kg": 85
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "weight_kg": 70,
+            "height_m": 1.75
+          }
+        },
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "weight_kg": 85,
+            "height_m": 1.8
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_11",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "destination": "Portland",
+            "origin": "Seattle"
+          }
+        },
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "destination": "Vancouver",
+            "origin": "Portland"
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "origin": "Seattle",
+            "destination": "Portland"
+          }
+        },
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "origin": "Portland",
+            "destination": "Vancouver"
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "par_12",
+      "category": "moderate_parallel",
+      "pass": true,
+      "predicted": [
+        {
+          "name": "generate_password",
+          "args": {
+            "include_symbols": true,
+            "length": 12
+          }
+        },
+        {
+          "name": "generate_password",
+          "args": {
+            "include_symbols": false,
+            "length": 20
+          }
+        }
+      ],
+      "expected": [
+        {
+          "name": "generate_password",
+          "args": {
+            "length": 12,
+            "include_symbols": true
+          }
+        },
+        {
+          "name": "generate_password",
+          "args": {
+            "length": 20,
+            "include_symbols": false
+          }
+        }
+      ],
+      "finish_reason": "tool_calls"
+    },
+    {
+      "id": "chain_01",
+      "category": "moderate_chained",
+      "pass": true,
+      "steps": [
+        {
+          "step": 1,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "get_weather",
+              "args": {
+                "location": "Chicago"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "get_weather",
+              "args": {
+                "location": "Chicago"
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "convert_temperature",
+              "args": {
+                "from_unit": "celsius",
+                "to_unit": "fahrenheit",
+                "value": 8
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "convert_temperature",
+              "args": {
+                "value": 8,
+                "from_unit": "celsius",
+                "to_unit": "fahrenheit"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_02",
+      "category": "moderate_chained",
+      "pass": true,
+      "steps": [
+        {
+          "step": 1,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "get_stock_price",
+              "args": {
+                "symbol": "NVDA"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "get_stock_price",
+              "args": {
+                "symbol": "NVDA"
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "place_order",
+              "args": {
+                "price": 131.5,
+                "quantity": 10,
+                "symbol": "NVDA"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "place_order",
+              "args": {
+                "symbol": "NVDA",
+                "quantity": 10,
+                "price": 131.5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_03",
+      "category": "moderate_chained",
+      "pass": true,
+      "steps": [
+        {
+          "step": 1,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "search_flights",
+              "args": {
+                "date": "2026-11-15",
+                "destination": "LHR",
+                "origin": "JFK"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "search_flights",
+              "args": {
+                "origin": "JFK",
+                "destination": "LHR",
+                "date": "2026-11-15"
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "book_flight",
+              "args": {
+                "flight_id": "BA117",
+                "passenger": "Walker"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "book_flight",
+              "args": {
+                "flight_id": "BA117",
+                "passenger": "Walker"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_04",
+      "category": "moderate_chained",
+      "pass": true,
+      "steps": [
+        {
+          "step": 1,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "get_user",
+              "args": {
+                "user_id": 42
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "get_user",
+              "args": {
+                "user_id": 42
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "send_email",
+              "args": {
+                "body": "Dear Ana, this is a reminder that your membership is due for renewal. Please visit our website to complete the process.",
+                "subject": "Membership Renewal",
+                "to": "ana@rivera.com"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "send_email",
+              "args": {
+                "to": "ana@rivera.com",
+                "subject": "Membership renewal"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_05",
+      "category": "moderate_chained",
+      "pass": true,
+      "steps": [
+        {
+          "step": 1,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "calculate_cart_total",
+              "args": {
+                "cart_id": "77"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "calculate_cart_total",
+              "args": {
+                "cart_id": "77"
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "apply_discount",
+              "args": {
+                "coupon_code": "SAVE10",
+                "order_total": 59.97
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "apply_discount",
+              "args": {
+                "order_total": 59.97,
+                "coupon_code": "SAVE10"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_06",
+      "category": "moderate_chained",
+      "pass": true,
+      "steps": [
+        {
+          "step": 1,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "get_weather",
+              "args": {
+                "location": "Denver"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "get_weather",
+              "args": {
+                "location": "Denver"
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "set_thermostat",
+              "args": {
+                "room": "home",
+                "temperature": 22
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "set_thermostat",
+              "args": {
+                "room": "home",
+                "temperature": 22
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_07",
+      "category": "moderate_chained",
+      "pass": true,
+      "steps": [
+        {
+          "step": 1,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "find_restaurant",
+              "args": {
+                "cuisine": "Thai",
+                "location": "Portland",
+                "max_price_per_person": 25
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "find_restaurant",
+              "args": {
+                "cuisine": "Thai",
+                "location": "Portland",
+                "max_price_per_person": 25
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "book_table",
+              "args": {
+                "party_size": 2,
+                "restaurant_id": "R7",
+                "time": "19:00"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "book_table",
+              "args": {
+                "restaurant_id": "R7",
+                "party_size": 2,
+                "time": "19:00"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_08",
+      "category": "moderate_chained",
+      "pass": true,
+      "steps": [
+        {
+          "step": 1,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "search_inventory",
+              "args": {
+                "item": "laptop"
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "search_inventory",
+              "args": {
+                "item": "laptop"
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "pass": true,
+          "predicted": [
+            {
+              "name": "create_purchase_order",
+              "args": {
+                "item": "laptop",
+                "quantity": 10
+              }
+            }
+          ],
+          "expected": [
+            {
+              "name": "create_purchase_order",
+              "args": {
+                "item": "laptop",
+                "quantity": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coding_python_game",
+      "category": "coding",
+      "pass": true,
+      "grade": {
+        "score": 3,
+        "max": 4,
+        "checks": {
+          "board_print": true,
+          "input_validation": true,
+          "win_detection": true,
+          "runs_clean": false,
+          "_stderr_excerpt": "timeout: game loop never exited (did it ask 'Play again?'?)"
+        }
+      },
+      "lang": "python",
+      "code_chars": 6320
+    },
+    {
+      "id": "coding_html_profile",
+      "category": "coding",
+      "pass": false,
+      "grade": {
+        "score": 0,
+        "max": 7,
+        "checks": {
+          "doctype": false,
+          "structure": false,
+          "h1_name": false,
+          "form": false,
+          "style_dark_media": false,
+          "script_hookup": false,
+          "validation_logic": false
+        }
+      },
+      "lang": "",
+      "code_chars": 0,
+      "error": "connection failed after retry: HTTPConnectionPool(host='127.0.0.1', port=8090): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8090): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+    }
+  ]
+}

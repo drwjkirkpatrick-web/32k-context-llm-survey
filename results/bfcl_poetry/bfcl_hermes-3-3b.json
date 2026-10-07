@@ -1,0 +1,1003 @@
+{
+  "model": "hermes-3-3b",
+  "timestamp": "2026-10-06T18:08:42.856646",
+  "categories": {
+    "simple": {
+      "total": 30,
+      "correct": 0
+    },
+    "moderate_parallel": {
+      "total": 12,
+      "correct": 0
+    },
+    "moderate_chained": {
+      "total": 8,
+      "correct": 0
+    },
+    "coding": {
+      "total": 2,
+      "correct": 1
+    }
+  },
+  "details": [
+    {
+      "id": "simple_01",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_02",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 250,
+            "from_currency": "USD",
+            "to_currency": "EUR"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_03",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "calculate_mortgage",
+          "args": {
+            "principal": 320000,
+            "annual_rate": 4.2,
+            "years": 30
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_04",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "set_alarm",
+          "args": {
+            "time": "07:30",
+            "label": "workout"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_05",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "send_email",
+          "args": {
+            "to": "maria@example.com",
+            "subject": "Q3 Invoice",
+            "body": "Hi Maria, please find the Q3 invoice attached."
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_06",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "origin": "Seattle",
+            "destination": "Portland"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_07",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "play_song",
+          "args": {
+            "title": "Bohemian Rhapsody",
+            "artist": "Queen"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_08",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "AAPL"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_09",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "weight_kg": 70,
+            "height_m": 1.75
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_10",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "translate_text",
+          "args": {
+            "text": "Good morning",
+            "target_language": "Spanish"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_11",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "title": "Dentist appointment",
+            "date": "2026-10-12",
+            "time": "14:00"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_12",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "find_restaurant",
+          "args": {
+            "cuisine": "Thai",
+            "location": "Portland",
+            "max_price_per_person": 20
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_13",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "random_number",
+          "args": {
+            "min": 1,
+            "max": 100
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_14",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "generate_password",
+          "args": {
+            "length": 16,
+            "include_symbols": true
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_15",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "track_package",
+          "args": {
+            "tracking_id": "1Z999AA10123456784"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_16",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "calculate_tip",
+          "args": {
+            "bill_amount": 85.4,
+            "tip_percentage": 18
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_17",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "set_thermostat",
+          "args": {
+            "room": "living room",
+            "temperature": 22
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_18",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "log_workout",
+          "args": {
+            "activity": "running",
+            "duration_minutes": 45,
+            "calories": 430
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_19",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_customer",
+          "args": {
+            "customer_id": 4821
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_20",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "milk",
+            "quantity": 2
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_21",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Dune: Part Two",
+            "theater": "downtown"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_22",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_definition",
+          "args": {
+            "word": "ephemeral"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_23",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "create_todo",
+          "args": {
+            "task": "buy a birthday cake",
+            "due_date": "2026-10-02",
+            "priority": "high"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_24",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_sunrise_sunset",
+          "args": {
+            "location": "Reykjavik",
+            "date": "2026-06-21"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_25",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "control_smart_light",
+          "args": {
+            "room": "bedroom",
+            "state": "off"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_26",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "book_hotel",
+          "args": {
+            "city": "Barcelona",
+            "check_in": "2026-11-20",
+            "nights": 4
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_27",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_recipe",
+          "args": {
+            "ingredients": [
+              "chicken",
+              "rice",
+              "broccoli"
+            ]
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_28",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "send_text",
+          "args": {
+            "to": "555-0142",
+            "message": "Running late, start without me"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_29",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "calculate_fuel_cost",
+          "args": {
+            "distance_miles": 450,
+            "mpg": 32,
+            "price_per_gallon": 3.85
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "simple_30",
+      "category": "simple",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "query_sales",
+          "args": {
+            "region": "west",
+            "quarter": "Q3"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_01",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Paris"
+          }
+        },
+        {
+          "name": "get_weather",
+          "args": {
+            "location": "Tokyo"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_02",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 100,
+            "from_currency": "USD",
+            "to_currency": "EUR"
+          }
+        },
+        {
+          "name": "convert_currency",
+          "args": {
+            "amount": 100,
+            "from_currency": "USD",
+            "to_currency": "JPY"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_03",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "AAPL"
+          }
+        },
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "MSFT"
+          }
+        },
+        {
+          "name": "get_stock_price",
+          "args": {
+            "symbol": "TSLA"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_04",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "title": "Lunch with Sam",
+            "date": "2026-10-09",
+            "time": "12:00"
+          }
+        },
+        {
+          "name": "create_calendar_event",
+          "args": {
+            "title": "Gym session",
+            "date": "2026-10-09",
+            "time": "18:00"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_05",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "send_text",
+          "args": {
+            "to": "555-0101",
+            "message": "Love you!"
+          }
+        },
+        {
+          "name": "send_text",
+          "args": {
+            "to": "555-0303",
+            "message": "Happy birthday!"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_06",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "set_thermostat",
+          "args": {
+            "room": "bedroom",
+            "temperature": 21
+          }
+        },
+        {
+          "name": "control_smart_light",
+          "args": {
+            "room": "kitchen",
+            "state": "off"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_07",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Dune: Part Two",
+            "theater": "downtown"
+          }
+        },
+        {
+          "name": "get_movie_showtimes",
+          "args": {
+            "movie": "Interstellar",
+            "theater": "mall"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_08",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "milk",
+            "quantity": 1
+          }
+        },
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "eggs",
+            "quantity": 1
+          }
+        },
+        {
+          "name": "add_to_shopping_list",
+          "args": {
+            "item": "bread",
+            "quantity": 1
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_09",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "play_song",
+          "args": {
+            "title": "Bohemian Rhapsody",
+            "artist": "Queen"
+          }
+        },
+        {
+          "name": "play_song",
+          "args": {
+            "title": "Hotel California",
+            "artist": "Eagles"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_10",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "weight_kg": 70,
+            "height_m": 1.75
+          }
+        },
+        {
+          "name": "calculate_bmi",
+          "args": {
+            "weight_kg": 85,
+            "height_m": 1.8
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_11",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "origin": "Seattle",
+            "destination": "Portland"
+          }
+        },
+        {
+          "name": "get_driving_distance",
+          "args": {
+            "origin": "Portland",
+            "destination": "Vancouver"
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "par_12",
+      "category": "moderate_parallel",
+      "pass": false,
+      "predicted": [],
+      "expected": [
+        {
+          "name": "generate_password",
+          "args": {
+            "length": 12,
+            "include_symbols": true
+          }
+        },
+        {
+          "name": "generate_password",
+          "args": {
+            "length": 20,
+            "include_symbols": false
+          }
+        }
+      ],
+      "finish_reason": "stop"
+    },
+    {
+      "id": "chain_01",
+      "category": "moderate_chained",
+      "pass": false,
+      "steps": [
+        {
+          "step": 1,
+          "pass": false,
+          "predicted": [],
+          "expected": [
+            {
+              "name": "get_weather",
+              "args": {
+                "location": "Chicago"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_02",
+      "category": "moderate_chained",
+      "pass": false,
+      "steps": [
+        {
+          "step": 1,
+          "pass": false,
+          "predicted": [],
+          "expected": [
+            {
+              "name": "get_stock_price",
+              "args": {
+                "symbol": "NVDA"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_03",
+      "category": "moderate_chained",
+      "pass": false,
+      "steps": [
+        {
+          "step": 1,
+          "pass": false,
+          "predicted": [],
+          "expected": [
+            {
+              "name": "search_flights",
+              "args": {
+                "origin": "JFK",
+                "destination": "LHR",
+                "date": "2026-11-15"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_04",
+      "category": "moderate_chained",
+      "pass": false,
+      "steps": [
+        {
+          "step": 1,
+          "pass": false,
+          "predicted": [],
+          "expected": [
+            {
+              "name": "get_user",
+              "args": {
+                "user_id": 42
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_05",
+      "category": "moderate_chained",
+      "pass": false,
+      "steps": [
+        {
+          "step": 1,
+          "pass": false,
+          "predicted": [],
+          "expected": [
+            {
+              "name": "calculate_cart_total",
+              "args": {
+                "cart_id": "77"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_06",
+      "category": "moderate_chained",
+      "pass": false,
+      "steps": [
+        {
+          "step": 1,
+          "pass": false,
+          "predicted": [],
+          "expected": [
+            {
+              "name": "get_weather",
+              "args": {
+                "location": "Denver"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_07",
+      "category": "moderate_chained",
+      "pass": false,
+      "steps": [
+        {
+          "step": 1,
+          "pass": false,
+          "predicted": [],
+          "expected": [
+            {
+              "name": "find_restaurant",
+              "args": {
+                "cuisine": "Thai",
+                "location": "Portland",
+                "max_price_per_person": 25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain_08",
+      "category": "moderate_chained",
+      "pass": false,
+      "steps": [
+        {
+          "step": 1,
+          "pass": false,
+          "predicted": [],
+          "expected": [
+            {
+              "name": "search_inventory",
+              "args": {
+                "item": "laptop"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coding_python_game",
+      "category": "coding",
+      "pass": true,
+      "grade": {
+        "score": 3,
+        "max": 4,
+        "checks": {
+          "board_print": true,
+          "input_validation": true,
+          "win_detection": true,
+          "runs_clean": false,
+          "_stdout_excerpt": " \"1\" \"2\" \"3\"\n",
+          "_stderr_excerpt": "()\n    ~~~~~~~~~^^\n  File \"<string>\", line 52, in play_game\n    print_board(board)\n    ~~~~~~~~~~~^^^^^^^\n  File \"<string>\", line 6, in print_board\n    print(f' \"{board[i][0]}\" | {board[i[1]]} | {board[i[2]]}\"')\n                                      ~^^^\nTypeError: 'int' object is not subscriptable\n"
+        }
+      },
+      "lang": "python",
+      "code_chars": 2395
+    },
+    {
+      "id": "coding_html_profile",
+      "category": "coding",
+      "pass": false,
+      "grade": {
+        "score": 4,
+        "max": 7,
+        "checks": {
+          "doctype": true,
+          "structure": false,
+          "h1_name": false,
+          "form": true,
+          "style_dark_media": true,
+          "script_hookup": false,
+          "validation_logic": true
+        }
+      },
+      "lang": "html",
+      "code_chars": 1910
+    }
+  ]
+}
