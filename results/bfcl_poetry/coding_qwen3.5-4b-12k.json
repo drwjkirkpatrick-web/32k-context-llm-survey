@@ -1,0 +1,63 @@
+{
+  "model": "qwen3.5-4b",
+  "timestamp": "2026-10-06T18:50:08.879010",
+  "categories": {
+    "simple": {
+      "total": 0,
+      "correct": 0
+    },
+    "moderate_parallel": {
+      "total": 0,
+      "correct": 0
+    },
+    "moderate_chained": {
+      "total": 0,
+      "correct": 0
+    },
+    "coding": {
+      "total": 2,
+      "correct": 1
+    }
+  },
+  "details": [
+    {
+      "id": "coding_python_game",
+      "category": "coding",
+      "pass": false,
+      "grade": {
+        "score": 1,
+        "max": 4,
+        "checks": {
+          "board_print": false,
+          "input_validation": false,
+          "win_detection": false,
+          "runs_clean": true,
+          "_stdout_excerpt": "",
+          "_stderr_excerpt": ""
+        }
+      },
+      "lang": "",
+      "code_chars": 0
+    },
+    {
+      "id": "coding_html_profile",
+      "category": "coding",
+      "pass": true,
+      "grade": {
+        "score": 6,
+        "max": 7,
+        "checks": {
+          "doctype": true,
+          "structure": true,
+          "h1_name": true,
+          "form": false,
+          "style_dark_media": true,
+          "script_hookup": true,
+          "validation_logic": true
+        }
+      },
+      "lang": "html",
+      "code_chars": 8748
+    }
+  ]
+}

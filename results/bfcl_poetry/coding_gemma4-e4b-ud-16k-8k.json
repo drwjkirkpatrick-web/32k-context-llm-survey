@@ -1,0 +1,63 @@
+{
+  "model": "gemma4-e4b-ud",
+  "timestamp": "2026-10-06T18:27:19.049359",
+  "categories": {
+    "simple": {
+      "total": 0,
+      "correct": 0
+    },
+    "moderate_parallel": {
+      "total": 0,
+      "correct": 0
+    },
+    "moderate_chained": {
+      "total": 0,
+      "correct": 0
+    },
+    "coding": {
+      "total": 2,
+      "correct": 1
+    }
+  },
+  "details": [
+    {
+      "id": "coding_python_game",
+      "category": "coding",
+      "pass": true,
+      "grade": {
+        "score": 3,
+        "max": 4,
+        "checks": {
+          "board_print": true,
+          "input_validation": true,
+          "win_detection": true,
+          "runs_clean": false,
+          "_stderr_excerpt": "timeout: game loop never exited (did it ask 'Play again?'?)"
+        }
+      },
+      "lang": "python",
+      "code_chars": 6320
+    },
+    {
+      "id": "coding_html_profile",
+      "category": "coding",
+      "pass": false,
+      "grade": {
+        "score": 0,
+        "max": 7,
+        "checks": {
+          "doctype": false,
+          "structure": false,
+          "h1_name": false,
+          "form": false,
+          "style_dark_media": false,
+          "script_hookup": false,
+          "validation_logic": false
+        }
+      },
+      "lang": "",
+      "code_chars": 0,
+      "error": "connection failed after retry: HTTPConnectionPool(host='127.0.0.1', port=8090): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError(\"HTTPConnection(host='127.0.0.1', port=8090): Failed to establish a new connection: [Errno 111] Connection refused\"))"
+    }
+  ]
+}

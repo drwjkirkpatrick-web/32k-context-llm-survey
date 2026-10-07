@@ -1,0 +1,63 @@
+{
+  "model": "gemma4-e4b-ud",
+  "timestamp": "2026-10-06T18:31:51.732993",
+  "categories": {
+    "simple": {
+      "total": 0,
+      "correct": 0
+    },
+    "moderate_parallel": {
+      "total": 0,
+      "correct": 0
+    },
+    "moderate_chained": {
+      "total": 0,
+      "correct": 0
+    },
+    "coding": {
+      "total": 2,
+      "correct": 2
+    }
+  },
+  "details": [
+    {
+      "id": "coding_python_game",
+      "category": "coding",
+      "pass": true,
+      "grade": {
+        "score": 3,
+        "max": 4,
+        "checks": {
+          "board_print": true,
+          "input_validation": true,
+          "win_detection": true,
+          "runs_clean": false,
+          "_stdout_excerpt": "\n--- Tic Tac Toe ---\nYou are X. The computer is O.\nBoard positions correspond to numbers 1-9 (top-left to bottom-right).\n\n===============\n   |   |   \n---|---|---\n   |   |   \n---|---|---\n   |   |   \n===============\n\nYour turn (X).\nEnter your move (1-9): Invalid input. Please enter a number 1-9.\nEnter",
+          "_stderr_excerpt": " <module>\n    main()\n    ~~~~^^\n  File \"<string>\", line 145, in main\n    play_game()\n    ~~~~~~~~~^^\n  File \"<string>\", line 110, in play_game\n    move = get_human_move(board)\n  File \"<string>\", line 41, in get_human_move\n    move = input(\"Enter your move (1-9): \")\nEOFError: EOF when reading a line\n"
+        }
+      },
+      "lang": "python",
+      "code_chars": 4806
+    },
+    {
+      "id": "coding_html_profile",
+      "category": "coding",
+      "pass": true,
+      "grade": {
+        "score": 6,
+        "max": 7,
+        "checks": {
+          "doctype": true,
+          "structure": true,
+          "h1_name": true,
+          "form": false,
+          "style_dark_media": true,
+          "script_hookup": true,
+          "validation_logic": true
+        }
+      },
+      "lang": "html",
+      "code_chars": 8493
+    }
+  ]
+}
